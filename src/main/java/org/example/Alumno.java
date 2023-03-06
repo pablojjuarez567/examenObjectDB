@@ -11,6 +11,7 @@ import javax.persistence.*;
 public class Alumno {
 
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     Long id;
     String nombre;
     String telefono;
